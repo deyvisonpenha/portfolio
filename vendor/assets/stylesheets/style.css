@@ -1,0 +1,93 @@
+
+
+
+
+#header1 {
+	background-image: url('/assets/img07.jpg');
+	background-repeat:no-repeat;
+	background-attachment:fixed;/*tava : scroll*/
+	background-position:center center;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+	-o-background-size:cover;
+	text-align:center;
+	position: relative;
+	min-height: 100vh;
+	color:#000f23
+}
+
+#banner { 
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+
+#about {
+	background-image: url('/assets/img06.jpg');
+	background-repeat:no-repeat;
+	background-attachment:fixed;/*tava : scroll*/
+	background-position:center center;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+	-o-background-size:cover;
+	text-align:center;
+	position: relative;
+
+}
+
+.imagem {
+	/*padding-left: 100px; */
+	width: 280px;
+	height: 280px;
+		/*left: 50px;
+		position:absolute;*/
+	}	
+
+	/* Goto Next */
+	.goto-next { 
+		border: 0; 
+		bottom: 0; 
+		display: block; 
+		height: 5em; 
+		left: 50%; 
+		margin: 0 0 0 -5em; 
+		overflow: hidden; 
+		position: absolute; 
+		text-indent: 10em; 
+		white-space: nowrap; 
+		width: 10em; 
+		z-index: 1; 
+	}
+
+	.goto-next:before { 
+		background-image: url("/assets/arrow-down.svg"); 
+		background-position: center center; 
+		background-repeat: no-repeat; 
+		background-size: contain; 
+		content: ''; 
+		display: block; 
+		height: 3.5em; 
+		left: 50%; 
+		margin: -0.75em 0 0 -1em; 
+		position: absolute; 
+		top: 35%; 
+		width: 5em; 
+		z-index: 1; 
+	}
+
+
+	/* For mobile devices */
+	@media only screen and (max-width: 767px) {
+
+		.imagem{
+			/*padding-left: 100px; */
+			width: 180px;
+			height: 180px;
+		}
+
+		#banner{ 
+			padding-top: 30px;
+			padding-bottom: 20px;
+		}
+	}
