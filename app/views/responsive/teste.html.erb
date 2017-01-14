@@ -1,0 +1,165 @@
+
+<div class="container clearfix">
+
+	<header>
+
+	</header>
+
+	<div class="background" id="banner">
+	</div>
+	<div class="innerBanner">
+		<div class="colunaLogo">
+			<%= image_tag('img01.jpg', class:'img-circle' ) %>
+			<div id="social">
+				<a class="icons" href="https://github.com/deyvisonpenha"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
+				<a class="icons" href="https://br.linkedin.com/in/deyvison-penha-79bb2132/en"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+				<a class="icons" href="mailto:deyvisonpenha1@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+			</div>	
+		</div>
+
+		<div class="coluna">
+			<article id="articleBanner">
+				<h1>Deyvison Penha</h1>
+				<h2>A embedded system professor, Ruby on Rails developer and Entrepreneur that work to always getting be better.</h2>
+
+			</article>
+
+
+		</div>
+	</div>
+
+	<div class="down">
+		<a href="#about" class="scrollSuave"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+	</div>
+
+	<!-- section About -->
+	<section class="background" id="about">
+		<div class="containerRight">
+			<article id="article">
+				<br><br>
+				<h1>ABOUT ME</h1>
+				<br><br><br><br><br>
+				<h3>I'm computer engineer with 3 years of experience in IT segment as in web development, project management, SQL databases and user support. Also, I'm IoT enthusiast, motivated by new technology, management and leadership.</h3><br>
+
+			</article>
+		</div>
+
+		<div class="down">
+			<a href="#services" class="scrollSuave"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+		</div>	
+	</section>
+	<!-- end of section About -->
+
+
+
+	<section class="background" id="services">
+		<div class="titleServ">
+				<h1>PROFESSIONAL SERVICES</h1>
+		</div>
+
+		<div class="colunaServ1">
+			<div class="imageServ">
+				<span><i class="fa fa-diamond fa-5x" aria-hidden="true" ></i></span>
+			</div>
+			<div class="captionServ">
+				<article class="article">
+					<h1>Ruby on Rails</h1>
+					<h2>All security and resoucer of this stronger frameworks will be in your applications.</h2>
+				</article>
+			</div>
+		</div>
+
+		<div class="colunaServ">
+			<div class="imageServ">
+				<span><i class="fa fa-code fa-5x" aria-hidden="true" ></i></span>
+			</div>
+			<div class="captionServ">
+				<article class="article">
+					<h1>Responsive Design</h1>
+					<h2> I’ll create your own responsive layout using the viewport tag and CSS media queries.</h2>
+				</article>
+			</div>
+		</div>
+
+		<div class="colunaServ">
+			<div class="imageServ">
+				<span><i class="fa fa-cloud fa-5x" aria-hidden="true" ></i></span>
+			</div>
+			<div class="captionServ">
+				<article class="article">
+					<h1>Cloud Application</h1>
+					<h2>Run your application anywere.</h2>
+				</article>
+			</div>
+
+		<div class="down">
+			<a href="#portfolio" class="scrollSuave"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+		</div>
+	</section>
+
+	<section class="background" id="portfolio">
+		
+		<article id="titulo">
+			<h1>PORTFOLIO</h1>
+			<h2>All this projects was made in Ruby on Rails and are responsives.  </h2>
+		</article>
+		
+		<div class="colunaPort">
+			<div class="imagePort">
+				<%= image_tag('astronalta.jpg', class:'logoPort' ) %>
+			</div>
+			<div class="captionPort">
+				<article class="article">
+					<h1>Projeto 1</h1>
+					<h2> Website Design</h2>
+				</article>
+			</div>
+		</div>
+
+		<div class="colunaPort">
+			<div class="imagePort">
+				<%= image_tag('img00.jpg', class:'logoPort' ) %>
+			</div>
+			<div class="captionPort">
+				<article class="article">
+					<h1>Projeto 2</h1>
+					<h2> Website Design</h2>
+				</article>
+			</div>
+		</div>
+
+		<div class="colunaPort">
+			<div class="imagePort">
+				<%= image_tag('img04.jpg', class:'logoPort' ) %>
+			</div>
+			<div class="captionPort">
+				<article class="article">
+					<h1>Projeto 3</h1>
+					<h2> Website Design</h2>
+				</article>
+			</div>
+
+		</div>
+
+	</section>
+
+	<footer class="footer">
+		<p>@2017 Deyvison Penha.  All rights reserved. </p>
+	</footer>
+
+</div>
+
+
+<script type="text/javascript">
+
+	var $doc = $('html, body');
+	$('.scrollSuave').click(function() {
+		$doc.animate({
+			scrollTop: $( $.attr(this, 'href') ).offset().top
+		}, 500, 'linear');
+		return false;
+	});
+
+
+
+</script>
